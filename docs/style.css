@@ -1,0 +1,42 @@
+
+body {
+    background-color: var(--light-eggshell);
+}
+
+p {
+    font-family: 'Montserrat';
+}
+
+.sidebar, .sidebar-toggle {
+    background-color: var(--dark-matt);
+
+}
+
+.sidebar ul li a {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    font-family: 'MontserratMedium';
+}
+
+.sidebar ul li.active>a {
+    color: #fff;
+}
+
+.app-name {
+    font-family: 'MontserratBold';
+    color: #fff;
+}
+
+.sidebar>h1 {
+    font-size: 2rem;
+}
+
+.sidebar-toggle {
+   top:auto;
+}
+
+img {
+    width: 450px;
+    height: 600px;
+    object-fit: fill;
+}
