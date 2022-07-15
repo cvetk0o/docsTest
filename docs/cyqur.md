@@ -27,17 +27,19 @@ Since your Cyqur data is secured in the browser, you can delete part or everythi
 
 ## Use Cases
 
-Use Case 1:
+#### Use Case 1:
 Simple encryption and decryption.
 
 You enter some data and a password and the encrypted data appears. This encrypted data can be copied and texted to someone else. If they have the password, they can decrypt the secret using Cyqur. 
 
-Use Case 2: 
+#### Use Case 2: 
+
 Storing a secret that has value if lost or misappropriated (e.g seed words to a crypto wallet).
 
 You follow these steps: Use a browser with no other extensions installed Turn off the internet Open Cyqur and enter a memorable password Enter the secret Download the full packet Store the full packet in your local folders (not ones that are auto stored on iCloud, Dropbox or other helpful cloud service) Wipe eveything (settings) Close and reopen the browser Turn the internet on and email or message the encrypted package 
 
-Use Case 3: 
+#### Use Case 3: 
+
 Fragmenting the secrets, distributing and hiding. 
 
 Once cloud settings have been provided, the encrypted secret is cut into 10 parts and distributed across the cloud. A packet records the location. The packets are then distributed to interested parties. This means all the Cyqur data can be deleted as the fragments will be held on the Cloud.

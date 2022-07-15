@@ -183,7 +183,7 @@ Click on the open envelope icon to reveal the secret (with the correct password)
 
 Click on the Encryoption to view the creation id, the encrypted secret ...
 
-![Vault encryption](/images//vault-encryption.png)
+![Vault encryption](/images/vault-encryption.png)
 
 Click on the Packets. You can download a full packet, a combination or individual packets. You can also down external packets (where the fragment has been saved to the cloud)
 

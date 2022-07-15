@@ -6,9 +6,23 @@ p {
     font-family: 'Montserrat';
 }
 
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark-matt);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.header img {
+    height: 30px;
+    width: 30px;
+}
+
 .sidebar, .sidebar-toggle {
     background-color: var(--dark-matt);
-
 }
 
 .sidebar ul li a {
@@ -30,8 +44,18 @@ p {
     font-size: 2rem;
 }
 
-.sidebar-toggle {
-   top:auto;
+@media screen and (min-width: 700px) {
+    .sidebar-toggle {
+        display: none;
+    }
+  }
+
+button.sidebar-toggle {
+    background-color: transparent;
+}
+
+body.close .sidebar-toggle {
+    background-color: transparent;
 }
 
 img {
