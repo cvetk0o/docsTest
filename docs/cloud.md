@@ -10,8 +10,8 @@ To save fragments to the cloud, open a free account at Cloudinary. Cloudinary al
 
 #### How do I do this?
 
-![Cloudinary](/images/cloudinary.png)
-
 Go to Cloudinary settings (Cog at the top), the "upload" tab and then scroll to the Upload Presets. Here you can create a simple api key for easy uploads. Click Add Upload Preset and enter the Upload Preset Name (cloud name), the folder the files will be sent to and the preset api token which is the Preset Name. Make sure Signing Mode = Unsigned.
+
+![Cloudinary](/images/cloudinary.png)
 
 Enter the details into Cyqur Settings. Test out by adding a random secret. You should find in the Vault under Packets, clouded packets which have been uploaded to Cloudinary.

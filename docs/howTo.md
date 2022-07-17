@@ -2,9 +2,11 @@
 
 ## Access 
 
-Cyqur can be accessed by adding an extension to a browser such as Edge and Chrome from the Google Chrome webstore. Alternatively, the extension can be added by unpacking the code in developer mode in the browser or using a Microsoft policy behind a firewall. It can also be used directly from the Cyqur website.
+Cyqur can be accessed by adding an extension to a browser such as Edge and Chrome from the Google Chrome webstore. Alternatively, the extension can be added by unpacking the code in developer mode in the browser or using a Microsoft policy behind a firewall. It can also be used directly from the Cyqur website and it gives us option to save it as Progressive Web Application on our device.
 
-As an extension, it can be called vey quickly. For packet imports we suggest it is expanded into its own window as uploading files into an extension can be frustrating.
+![Sign In](/images/pwa.png)
+
+As an extension, it can be called very quickly. For packet imports we suggest it is expanded into its own window as uploading files into an extension can be frustrating.
 
 ## Sign In
 
@@ -12,9 +14,9 @@ As an extension, it can be called vey quickly. For packet imports we suggest it 
 
 Sign In is where a Main Password opens up the vault of secrets and allows access to the Settings When secrets are encrypted, the default password used is this Main password. Secrets can be encrypted with alternative password if extra security is required.
 
-If there is no Main Password or you do not want to use it, click the Plus icon. If you want to start over, click the Cross icon - this will delete the Main Password.
+If there is no Main Password enter desired password and click Register button. If password allready exist and user wants new password he first needs to be signed in and then it can click on Delete password - this will delete the Main Password.
 
-If you have set the "Always Keep Logged On" option on the Setting page to Yes then when you open Cyqur, all the icons will be shown and the default page will be the Vault. However it will not show or store the Main Password as raw text. You will need to reenter and it will then be recorded in the text field for future use.
+If you have checked the "Keep Logged On" option on the Setting page then when you open Cyqur, all the icons will be shown and the default page will be the Vault. However it will not show or store the Main Password as raw text. You will need to reenter and it will then be recorded in the text field for future use.
 
 The setting for keeping logged on is in Settings / Options. This ensures all the icons are available when the app is reloaded.
 
@@ -46,7 +48,13 @@ Meta data:
 
 ![Meta data](/images/meta2.png)
 
-Pasting in the encrypted secret along with the password used to encrypt it will reveal the secret. Also revealed is meta data such as the original tags, a public key generated at the time the secret was created and a rehash to prove the public key is correct. It also reveals a timestamp, the encoding used and the cryptography method. Finally the raw JSON data is revealed.
+View flows: 
+
+If a user access his Cyqur Vault and from there clicks on View icon it will be redirected to View Page where all the neccesseary data will be populated.
+
+![Meta data](/images/vault.png)
+
+Another view flow can be pasting in the encrypted secret along with the password used to encrypt it manualy on View Page will reveal the secret. Also revealed is meta data such as the original tags, a public key generated at the time the secret was created and a rehash to prove the public key is correct. It also reveals a timestamp, the encoding used and the cryptography method. Finally the raw JSON data is revealed.
 
 
 ## Add Secret
@@ -55,9 +63,9 @@ There are 3 add secret screens. The first allows you to enter or paste in a secr
 
 #### General Add
  
-![Meta data](/images/meta1.png)
+![Meta data](/images/general-add.png)
 
-Enter the Tags or keywords that may identify what is in the secret. This is used and recorded in the meta data when the secret is encrypted. It is suggested that this these tags be renamed in the Vault to make it more vague as to what the secret is.
+Enter the Tags or keywords that may identify what is in the secret. This is used and recorded in the meta data when the secret is encrypted. It is suggested that these tags be renamed in the Vault to make it more vague as to what the secret is.
 
 Enter or paste in the secrets (be careful when pasting as other applications may have access to the clip board)
 
@@ -70,7 +78,7 @@ When ready, click the Secure button. This will add the secret and all the fragme
 
 #### Blockchain
 
-If an account has been created at cyqur.app, the public key will be registered and a transaction hash created on a blockchain (currently Ethereum, Solano and Zilliqa). This is a proof of record and also allows for validation of the secret.
+If an account has been created at cyqur.app, the public key will be registered and a transaction hash created on a blockchain (currently Ethereum, Solana and Zilliqa). This is a proof of record and also allows for validation of the secret.
 
 The blockchain meta data can be viewed in the Vault.
 
@@ -92,12 +100,13 @@ Below shows the live encryption as each key stroke is entered
 
 Packets are JSON formatted text files that contain some or all of your encrypted secret. Packets are accessible via the Vault and can be downloaded as text files or, under the Fragments section, each encrypted raw fragment viewed and copied. Packets are JSON wrappers. A packet may also contain
 
-The tags when created
-The date and time the secret was encrypted
-The unique identifier that groups similar packets together
-Any cloud the packet has been uploaded to including blockchain
-Any internal hash used to check the integrity and therefore proof of the secret
-The encoding used (defaulting to base64) including the encryption algorithm used
+- The tags when created
+- The date and time the secret was encrypted
+- The unique identifier that groups similar packets together
+- Any cloud the packet has been uploaded to including blockchain
+- Any internal hash used to check the integrity and therefore proof of the secret
+- The encoding used (defaulting to base64) including the encryption algorithm used
+
 This packet is for the first fragment (f1):
     
     "f1": "RHN4WWtJUFlaczkvaEhhjUdvaDNRZERpTXBiZ3ZTcEF3S2hpOVdEM3E1RndaMElhOFBVY2NZMFdhSE5MZXF3aGZwZU44azdWc1BFcDRONnBX",
@@ -179,9 +188,9 @@ This is where encrypted secrets are stored. They are held within the browser and
 
 Each secret can be Deleted from the browser. This is permanent and you cannot recover unless you have saved Packets. You will need all 10 fragments to recover.
 
-Click on the open envelope icon to reveal the secret (with the correct password).
+Click on the View icon to reveal the secret (with the correct password).
 
-Click on the Encryoption to view the creation id, the encrypted secret ...
+Click on the Encryption to view the creation id, the encrypted secret ...
 
 ![Vault encryption](/images/vault-encryption.png)
 

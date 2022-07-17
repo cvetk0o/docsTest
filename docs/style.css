@@ -69,3 +69,8 @@ img {
     height: 600px;
     object-fit: fill;
 }
+
+
+.markdown-section code {
+    background-color: var(--dark-gray)
+}
