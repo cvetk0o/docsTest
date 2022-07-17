@@ -2,7 +2,7 @@
 
 ## Access 
 
-Cyqur can be accessed by adding an extension to a browser such as Edge and Chrome from the Google Chrome webstore. Alternatively, the extension can be added by unpacking the code in developer mode in the browser or using a Microsoft policy behind a firewall. It can also be used directly from the Cyqur website and it gives us option to save it as Progressive Web Application on our device.
+Cyqur can be accessed by adding an extension to a browser such as Safari, Mozzila and Chrome from the Google Chrome webstore. Alternatively, the extension can be added by unpacking the code in developer mode in the browser or using a Microsoft policy behind a firewall. It can also be used directly from the Cyqur website and it gives us option to save it as Progressive Web Application on our device.
 
 ![Sign In](/images/pwa.png)
 
